@@ -14,6 +14,10 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
+}
+p {
+  margin: 0;
 }
 
 #search-box {
@@ -28,7 +32,42 @@ ul {
   align-items: center;
 }
 
-.country-flag {
+.country-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.country-list-flag {
   display: block;
-  height: 24px;
+  width: 30px;
+}
+
+.country-list-name {
+  display: block;
+  margin-left: 10px;
+}
+
+.country-title {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.country-solo-flag {
+  display: block;
+  width: 50px;
+}
+
+.country-solo-name {
+  font-size: 34px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.country-solo-item {
+  font-weight: 600;
+}
+
+.country-solo-span {
+  font-weight: 400;
+  margin-left: 10px;
 }
